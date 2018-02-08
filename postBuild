@@ -1,3 +1,5 @@
+apt-get update
+apt-get install default-jre
 curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.0.tar.gz
 tar -xvf elasticsearch-6.2.0.tar.gz
 cd elasticsearch-6.2.0/bin
