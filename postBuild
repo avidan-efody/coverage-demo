@@ -4,8 +4,8 @@ echo "************* debug *************** "
 mv jdk-8u161-linux-x64.tar.gz jdk/
 cd jdk
 tar -xzf jdk-8u161-linux-x64.tar.gz
-export JAVA_HOME=$(pwd)
-export PATH=$(pwd)/bin:$PATH
+export JAVA_HOME=$(pwd)/jdk1.8.0_161
+export PATH=$(pwd)/jdk1.8.0_161/bin:$PATH
 curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.0.tar.gz
 tar -xvf elasticsearch-6.2.0.tar.gz
 cd elasticsearch-6.2.0/bin
