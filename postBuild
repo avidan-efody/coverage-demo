@@ -9,4 +9,4 @@ export PATH=$(pwd)/jdk1.8.0_161/bin:$PATH
 curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.0.tar.gz
 tar -xvf elasticsearch-6.2.0.tar.gz
 cd elasticsearch-6.2.0/bin
-./elasticsearch
+./elasticsearch &
