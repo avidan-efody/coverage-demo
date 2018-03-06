@@ -1,12 +1,14 @@
 wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u161-b12/2f38c3b165be4555a1fa6e98c45e0808/jdk-8u161-linux-x64.tar.gz
+curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.0.tar.gz
+
 mkdir jdk
-echo "************* debug *************** "
+mkdir es
+
 mv jdk-8u161-linux-x64.tar.gz jdk/
+mv elasticsearch-6.2.0.tar.gz es/
+
 cd jdk
 tar -xzf jdk-8u161-linux-x64.tar.gz
-export JAVA_HOME=$(pwd)/jdk1.8.0_161
-export PATH=$(pwd)/jdk1.8.0_161/bin:$PATH
-curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.0.tar.gz
+
+cd ../es
 tar -xvf elasticsearch-6.2.0.tar.gz
-cd elasticsearch-6.2.0/bin
-./elasticsearch &
