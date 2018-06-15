@@ -1,0 +1,2 @@
+rm -rf simple_tb/
+aws s3 rb s3://coverage-demo/ --force
